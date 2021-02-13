@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 // Do python script
 
 
-    res.send('do python script')
+    res.send('do python script and more stuff')
 });
 
 app.listen(3001, () => {
