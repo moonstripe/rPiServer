@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     // Do python script
     let dataToSend;
     // spawn new child process to call the python script
-    const python = spawn('python', ['./python/test.py']);
+    const python = spawn('python3', ['./python/test.py']);
     // collect data from script
     python.stdout.on('data', function (data) {
       console.log('Pipe data from python script ...');
