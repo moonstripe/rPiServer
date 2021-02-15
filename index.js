@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(routes);
 app.get('/', (req, res) => {
-    console.log(req.rawHeaders);
+    console.log(req.rawTrailers);
 
 // Do python script
 
