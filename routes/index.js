@@ -2,7 +2,7 @@ const router = require('express').Router();
 const apiRoutes = require('./apiRoutes');
 
 router.use('/api', apiRoutes);
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     // console.log(req.rawTrailers);
   
     // Do python script
